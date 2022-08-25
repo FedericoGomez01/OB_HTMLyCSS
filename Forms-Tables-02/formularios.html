@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <p>We are learning about Forms using HTML</p>
+        <!--Con el metodo get vamos a poder obtener la informaicon -->
+        <form action="resultados.html" method="get">
+            <!--Con las etiquetas label vamos a poder cliquear el texto y que se 
+            linkee con el id que queremos-->
+            <div>
+                <label for="username">*User name</label>
+                <input name="username" id="username" >
+            </div>
+            <br>
+            <div>
+                <label for="password" >*Password</label>
+                <input name="password" id="password" type="password" >
+            </div>
+            <br>
+            <div>
+                <label for="email" >Email</label>
+                <input name="texto" id="email" type="email" >
+            </div>
+            <br>
+            <div>
+                <label for="age" >Age</label>
+                <input name="texto" id="age" type="number" min="0" max="200">
+            </div>
+            <br>
+            <div>
+                <label for="date of Birth" >Date of Birth </label>
+                <input type="date" name="date of Birth" id="date of Birth">
+            </div>
+            <br>
+            <div>
+                <label for="coments">Coments</label>
+                <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </body>
+</html>
