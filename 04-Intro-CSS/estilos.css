@@ -1,0 +1,45 @@
+h3 {
+    color: brown;
+    align-content: center;
+    text-align: center;
+}
+
+/* Estoy probando colores y fuentes*/
+p {
+    background-color: bisque;
+    margin-block-start: 1cm;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: normal;
+    text-decoration:line-through;
+}
+
+#primeraNoticia {
+    background-color: white;
+    text-decoration: none;
+    font-size: 30pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+
+
+.encabezado 
+{
+    font-size: 24pt;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.parrafo-1 , .parrafo-2{
+    color: white;
+    margin-block-start: 0cm;
+    background-color: black;
+    text-decoration: none;
+}

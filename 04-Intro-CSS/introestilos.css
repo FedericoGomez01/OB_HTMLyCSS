@@ -1,0 +1,44 @@
+/*Estilos para colores*/
+.colores
+{
+    color: orangered;
+}
+
+.color-hexadecimal
+{
+    color: #05db5e;
+    text-align: center;
+}
+
+.color-rgb{
+    color: rgb(100, 0, 20);
+}
+
+.color-rgba{
+    color: rgba(100, 100, 0, 0.2);
+}
+
+/*Fondos*/
+.fondo{
+    background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
+    background-position: top right;
+}
+
+.ancho {
+    background-color: beige;
+    width: 150px;
+}
+
+.alto {
+    background-color: aqua;
+    height: 100px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    /*border-top: none;*/
+    padding: 10px;
+    margin: 10px 0px;
+}

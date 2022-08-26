@@ -1,0 +1,36 @@
+.encabezado{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+li#elemento-1{
+    color: red;
+}
+
+li#elemento-2{
+    color: blueviolet;
+}
+
+li#elemento-2{
+    color: darkblue;
+}
+
+li#elemento-3{
+    color: aqua;
+}
+
+li#elemento-4{
+    color: darkcyan;
+}
+
+li#elemento-5{
+    color: darkgoldenrod;
+}
+
+
+*{
+    align-content: center;
+    text-align: center;
+}
