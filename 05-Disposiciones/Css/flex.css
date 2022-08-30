@@ -1,0 +1,36 @@
+/* https://codepen.io/enxaneta/full/adLPwv */
+
+/*Displey flex
+todo lo que contiene  lo ordena de manera flexible y ordenada*/
+.flex{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;
+    align-items: flex-end  ;
+    /*flex-wrap: wrap;*/
+}
+
+.contenido-1{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+
+.contenido-2{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+
+.contenido-3{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}

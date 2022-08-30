@@ -1,0 +1,23 @@
+.div1 , .div2 {
+    background-color: brown;
+    display: block;
+}
+
+.span-1
+{
+    background-color: aquamarine;
+    /*Por defecto tiene un display in line*/
+    display: inline;
+    float: right;
+}
+
+.span-2
+{
+    background-color: aquamarine;
+    /*Por defecto tiene un display in line*/
+    display: inline;
+    float: left;
+}
+.img{
+    width: 100px;
+}
