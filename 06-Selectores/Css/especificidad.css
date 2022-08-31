@@ -1,0 +1,32 @@
+/* Evitar la utilizacion en la medida de lo posible del !important*/
+/*(1,0,0)*/
+/*(0,1,0)*/
+/*(0,0,1)*/
+
+
+h1#h1-id.h1-class{
+    color: darksalmon;
+}
+/*MAS ESPECIFICO 1,0,0*/
+#h1-id{
+    color: darksalmon;
+}
+/*ESPECIFICIDAD MEDIA 0,1,0*/
+.h1-class{
+    color: yellow;
+}
+
+/*ESPECIFICIDAD MAS BAJA 0,0,0*/
+h1 {
+    color: blue;
+}
+
+
+p { 
+    color: orange;
+}
+
+/*Este es el nivel de especificidad mas alto de todos */
+h1 {
+    color: gray !important;
+}

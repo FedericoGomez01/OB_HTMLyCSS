@@ -1,0 +1,17 @@
+.boton{
+    background-color: green;
+}
+
+.boton::after{
+    content: 'Pasa por encima';
+}
+
+/*Pseudo clases*/
+.boton:hover{
+    color: white;
+    background-color: greenyellow;
+}
+/*pseudo elementos*/
+#boton-hecho::after{
+    content: 'Hecho!';
+}

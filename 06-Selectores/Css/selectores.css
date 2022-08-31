@@ -1,0 +1,16 @@
+/*ANIDACION DE SELECTORES*/
+
+/*Para hacer referencia a la seccion se puede hacer poniendo el nombre
+section.{nombre de la clase} o directamente nombre de la clase
+*/
+
+/* No se pone nada adelante cuando es class */
+.main .contenedor p {
+    color: green;
+}
+
+/* Se pone almohadilla # cuando es id */
+section.main .contenedor #boton-contenedor{
+    color: red;
+}
+

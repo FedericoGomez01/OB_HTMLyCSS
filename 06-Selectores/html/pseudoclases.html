@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo-Clases</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .hover{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+        /*El hover se usa cuando el pulsor pasa por encima*/
+        .hover:hover {
+            background-color: burlywood;
+        }
+
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+        }
+
+        .listado p:first-child{
+            color: white;
+        }
+        /*Link no visaiitados */
+        a:link{ 
+            background-color: blue;
+            color: white;
+        }
+        a:visited{
+            color: crimson;
+            background-color: aqua;
+        }
+
+        a:hover{
+            color: black;
+        }
+
+        a:active{
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+
+        </p>
+    </div>
+
+    <div class="listado">
+        <p>parrafo 1</p>
+        <p>parrafo 2</p>
+        <p>parrafo 3</p>
+    </div>
+
+
+    <div class="enlaces"> 
+        <a href="https://www.google.com.ar/?hl=es" target="_blank">Enlace a Google</a>
+        <a href="https://ar.marca.com/claro/" target="_blank">Enlace a Marca</a>
+    </div>
+</body>
+</html>
