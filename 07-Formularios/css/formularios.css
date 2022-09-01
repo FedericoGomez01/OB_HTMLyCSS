@@ -1,0 +1,69 @@
+.input{
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*ACCEDIENDO AL ELEMENTO DESDE EL ATRIBUTO TYPE */
+.input[type="password"]{
+    color: red;
+}
+
+.input-moderno{
+    border: none;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    outline: none;
+    padding: 5px;
+    color: rgb(56, 56, 56);
+}
+
+.input-moderno::placeholder{
+    color: #c2c2c2;
+}
+
+.input-moderno:focus{
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.input-background{
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 3px 5px rgb(192, 191, 191);
+
+}
+
+.input-background::placeholder{
+    color: grey;
+}
+
+.input-search{
+    padding: 10px;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 10px;
+    background-image: url(https://www.seekpng.com/png/detail/71-712261_lens-clipart-magnifier-search-icon-png-grey.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 10px;
+}
+
+textarea{
+    resize: both;
+}
+
+select{
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
