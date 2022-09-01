@@ -1,0 +1,24 @@
+
+body{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn-modern{
+    border: none;
+    background-color: lightsalmon;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #eee;
+}
+
+.btn-modern:hover{
+    transform: translateY(-5%);
+    
+    background-color: darksalmon;
+    color: black;
+    transition: 0.4s;
+    border-bottom: 1.5px solid grey ;
+    border-right: 1.5px solid grey;
+}
