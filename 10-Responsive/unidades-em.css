@@ -1,0 +1,24 @@
+.escenario{
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.escenario-1{
+    font-size: 32px;
+}
+
+.escenario-2{
+    font-size: 40px;
+}
+
+/*Utilizamos em para tener el tamanio relativo al padre donde esta contenido*/
+.em {
+    font-size: 2em;
+}
+
+/*RESPONSIVE*/
+/*Hace referencia al tamanio de fuente de la raiz dependiendo del tamanio de
+fuente que tengamos configuradio en nuestro dispositivo*/
+.rem {
+    font-size: 2rem;
+}
