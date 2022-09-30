@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de interes en Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="container py-4">
+        <!-- JUMBOTRON AND MODAL -->
+        <div>
+            <div class="bg-light p-4 rounded-3">
+                <div class="conntainer-fluid py-3">
+                    <h1 class="display-5 fw-ligth text-center">Jumbotron</h1>
+                    <hr>
+                    <p class="col-md-8 fs-5">Usando este Jumbotron nos va a aabrir una ventana modal.</p>
+                    <button class="btn btn-primary btn"data-bs-toggle="modal" data-bs-target="#Modal"> Abrir Ventana Modal</button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Ventana Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Esta es nuestra ventana modal que la abrimos desde el boton de nuestro jumbotron
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FORM -->
+        <div class="py-4">
+            <div class="fw-light fs-3 text-center "> Formulario</div>
+            <hr>
+            <div class="mb-3">
+                <label for="formName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formName" placeholder="Intruduce tu nombre">
+            </div>
+            
+            <div class="mb-3">
+                <label for="formNumber" class="form-label">Telefono</label>
+                <input type="Number" class="form-control" id="formNumber" placeholder="Intruduce tu telefono">
+            </div>
+            
+            <div class="mb-3">
+                <label for="formMessage" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div>
+            <p class=" text-center fw-semibold fs-2" >Tarjeta de presentacion</p>
+            <div class="card">
+                <div class="card-header text-center fw-light fs-3">
+                    Federico Gomez
+                </div>
+                <div class="card-body">Actualemte trabajo como <mark> Analista Programador en C# </mark>para una Sofrware Factory. <br> Me gustaria a futuro poder conseguir trabajo como desarrollador Front-end</div>
+                <div class="card-footer text-center fw-light fs-6">Fedegomez.pg@gmail.com</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+</html>
