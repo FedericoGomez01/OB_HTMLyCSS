@@ -1,0 +1,58 @@
+@use "mixins";
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vh;
+    background-color: blanchedalmond;
+    min-height: 100vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    @include mixins.formato-texto(rgba(235, 119, 119, 0.473));
+}
+
+p {
+    color: mixins.$text-color;
+    @include mixins.formato-texto();
+}
+
+
+/*NUEVA MANERA DE ACCEDERA ALAS ETIQUETAS DE SCSS*/
+.listado{
+    width: 10rem;
+    background-color: aquamarine;
+    padding: 0.5rem;   
+
+    ul {
+        margin: 0 0.5rem;
+        li
+        {
+            list-style: none;
+            &:hover{
+                color: white;
+            }
+            &:active{
+                color: red;
+            }
+        }
+    }
+}
+/*
+ESTA ES LA FORMA TRADICIONAL DE HACERLO DE CSS
+div.listado ul li{
+    list-style: none;
+}
+
+.listado ul li : hover{
+    color: white;
+}
+*/

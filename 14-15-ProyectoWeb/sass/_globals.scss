@@ -1,0 +1,219 @@
+@use "components";
+
+@mixin section-display(){
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+
+html{
+    min-width: 100vw;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.sec-home{
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    @include section-display();
+    .home-cta{
+        flex-direction: column;
+        flex: 1;
+        .cta-text{
+            color: components.$color-main;
+        }
+    }
+    .home-img img{
+        max-height: 30rem;
+    }
+    .home-title{
+        width: 20rem;
+        font-size: 3rem;
+    }
+    .home-description{
+        width: 300px;
+    }
+    .lead-magnet{
+        
+        .input-text{
+            width: 200px;
+        }
+    }
+}
+
+.sec-features{
+    @include section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+
+    .features{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .text{
+            padding: 2rem 0rem;
+            flex: 1;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .description{
+                    margin-left: 1rem;
+                    max-width: 20rem;
+                    .description-title{
+                        font-size: 1.15rem;
+                    }
+                    .description-text{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .image{
+            img{
+                max-width: 20rem;
+            }
+        }
+    }
+}
+
+.sec-benefits{
+    border-top: 1px solid #ddd;
+    margin: 0 2rem;
+    .intro{
+        @extend .sec-features, .intro;
+    }
+    .benefits-cards{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.sec-kpis{
+    margin: 0;
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+    width: 100%;
+    .kpi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .number{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+
+        .desc{
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+
+.sec-onboarding{
+
+    .intro{
+        @extend .sec-features, .intro;
+    }
+    .steps{
+        padding: 0 5rem 3rem 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator{
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta{
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url(https://assets.coinbase.com/assets/earn-upsell-desktop.969a983ce74a462a68ba618b798a8cfa.webp);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 35rem;
+    .footer-cta{
+        width: 50%;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-description{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+@media(max-width:768px){
+    .sec-onboarding{
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .sec-footer-cta{
+        background-image: none;
+        
+        .footer-cta{
+            width: 100%;
+            text-align: center;
+        }
+        
+    }
+
+    .sec-benefits{
+        .intro{
+            text-align: center;
+            h3{
+                font-size: 2rem;
+            }
+        }   
+    }
+
+    .sec-features{
+        .intro{
+            
+            p{
+                font-size: 1rem;
+            }
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
+}

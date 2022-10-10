@@ -1,0 +1,92 @@
+
+//FUNCIONES STRING
+@use "sass:string";
+@use "sass:math";
+@use "sass:list";
+@use "sass:selector";
+@use "sass:color";
+
+
+@debug "hola";
+@debug string.index("Helvetica Neue", "Neue");
+
+$string: "Helvetica";
+$newString: string.insert($string, " Bold", 10);
+
+@debug $newString;
+@debug string.length($newString);
+
+@debug string.slice($newString, 1,2);
+
+@debug string.to-upper-case("bold");
+@debug string.to-upper-case(Federico);
+@debug string.to-lower-case(FEDERICO);
+
+@debug string.unique-id();
+
+//FUNCIONES MATH 
+
+@debug math.$e;
+@debug math.$pi;
+
+
+@debug math.ceil(4.6);
+@debug math.clamp(1,123,100);
+@debug math.floor(4.5);
+
+@debug math.max(1,123,100,5000);
+@debug math.min(1,123,100,5000);
+
+@debug math.round(4.4);
+
+@debug math.abs(8);
+@debug math.abs(-8);
+
+
+@debug math.pow(2,23);
+
+//FUNCIONES CON LISTAS 
+$lista1: 10px 10px 15px 15px;
+@debug list.append($lista1, 20px, space);
+
+$boder-custom: solid 1px #ccc;
+@debug list.index($boder-custom, 1px);
+
+@debug list.is-bracketed($boder-custom);
+
+@debug list.join($boder-custom, $lista1);
+@debug list.length($boder-custom);
+@debug list.separator($boder-custom); 
+
+@debug list.set-nth($boder-custom, 2,solid); 
+
+
+//@debug list.slash($boder-custom); 
+@debug list.zip($boder-custom, $lista1); 
+
+
+//FUNCIONES DE SELECTOR
+$selector1: "a";
+$selector2: ".DISABLED";
+
+@debug selector.append($selector1, $selector2);
+
+//funciones de color
+$color: #fda22d;
+
+@debug color.adjust($color,$red: -50, $alpha: 0.5 );
+$color-adjust: #cba22d;
+
+@debug color.complement($color);
+$color-complement: #2d88fd;
+
+@debug darken($color, 10%);
+$color-darken: #f58b02;
+
+@debug lighten($color,10);
+$color-lighten : #fdb860;
+
+@debug color.hue($color);
+
+@debug color.invert($color);
+$color-invert: #025dd2;
